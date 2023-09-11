@@ -1,4 +1,4 @@
-Check if Strings Can be Made Equal With Operations I
+/*Check if Strings Can be Made Equal With Operations I
 
 You are given two strings s1 and s2, both of length 4, consisting of lowercase English letters.
 
@@ -28,7 +28,7 @@ Constraints:
 
 s1.length == s2.length == 4
 s1 and s2 consist only of lowercase English letters.
-
+*/
 class Solution {
 public:
     bool canBeEqual(string s1, string s2) {
