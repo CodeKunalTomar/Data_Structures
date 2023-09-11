@@ -1,4 +1,4 @@
-You are given two strings s1 and s2, both of length n, consisting of lowercase English letters.
+/*You are given two strings s1 and s2, both of length n, consisting of lowercase English letters.
 
 You can apply the following operation on any of the two strings any number of times:
 
@@ -22,7 +22,7 @@ Example 2:
 Input: s1 = "abe", s2 = "bea"
 Output: false
 Explanation: It is not possible to make the two strings equal.
-
+*/
 class Solution {
 public:
     bool checkStrings(string s1, string s2) {
