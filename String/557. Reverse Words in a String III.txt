@@ -1,0 +1,41 @@
+/*
+557. Reverse Words in a String III
+
+Given a string s, reverse the order of characters in each word within a sentence while still preserving whitespace and initial word order.
+
+Example 1:
+
+Input: s = "Let's take LeetCode contest"
+Output: "s'teL ekat edoCteeL tsetnoc"
+
+Example 2:
+
+Input: s = "God Ding"
+Output: "doG gniD"
+*/
+
+class Solution {
+public:
+    string reverseWords(string s) {
+        
+        int i = 0;
+
+        for(int j = 0; j < s.size(); j++)
+        {
+            if(s[j] == ' ') {
+                reverse(s.begin() + i, s.begin() + j);
+                i = j + 1;
+            }
+        }
+
+        reverse(s.begin() + i, s.end());
+        return s;
+
+    }
+};
+
+/*ANALYSIS -
+
+The time complexity of the code is O(n), where n is the length of the string. This is because each character in the string is processed once.
+
+The space complexity of the code is O(1). This is because the reversal of words in the string is done in-place, and no additional space that scales with the size of the input is used. The variables i and j used in the code use a constant amount of space./*
